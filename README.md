@@ -11,7 +11,7 @@ A timestamp-synced lyric display for the song "**About You**", built on an Ardui
  
 ## Lyrics File (.lrc)
 
-The `aboutyoulyrics.lrc` file below contains the full lyrics with line-level timestamps, in the standard LRC format. It's included so the timing data can be reused or ported to other languages/platforms if you don't want to use the Arduino sketch as-is.
+The `aboutyou-lyrics.lrc` file below contains the full lyrics with line-level timestamps, in the standard LRC format. It's included so the timing data can be reused or ported to other languages/platforms if you don't want to use the Arduino sketch as-is.
 
 ```
 [00:00.22] I
@@ -74,9 +74,9 @@ Each word in the lyrics is stored with its own timestamp (in milliseconds) and a
 
 ## Setup
 
-For hardware, wiring, and general setup instructions, see the [arduino-karaoke-lcd](https://github.com/CharmanderTheGreat/arduino-lyrics) hub repo. Once your board and LCD are wired and ready:
+For hardware, wiring, and general setup instructions, see the [arduino-lyrics](https://github.com/CharmanderTheGreat/arduino-lyrics) hub repo. Once your board and LCD are wired and ready:
 
-1. Open `[sketch-filename].ino` from this repo in Arduino IDE.
+1. Open `aboutyou-lyrics.ino` from this repo in Arduino IDE.
 2. Install the `LiquidCrystal_I2C` library via `Sketch > Include Library > Manage Libraries` → search "LiquidCrystal I2C" → install.
 3. Select **Board: Arduino Uno** and the correct **COM Port**.
 4. Upload the sketch.
@@ -100,4 +100,4 @@ There's no separate "play" command in software. Resetting the board is what trig
 
 ## Credits
 
-See the [arduino-karaoke-lcd](https://github.com/CharmanderTheGreat/arduino-lyrics) hub repo for library and tool credits.
+See the [arduino-lyrics](https://github.com/CharmanderTheGreat/arduino-lyrics) hub repo for library and tool credits.
